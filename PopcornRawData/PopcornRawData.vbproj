@@ -14,17 +14,20 @@
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <SccProjectName>"%24/PopcornRawData", AFQAAAAA</SccProjectName>
-    <SccLocalPath>..</SccLocalPath>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
     <SccAuxPath />
-    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+    <SccProvider>
+    </SccProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
-    <OutputPath>..\..\..\..\..\..\Program Files\Integral Solutions Int%27l\.NET\</OutputPath>
+    <OutputPath>..\..\..\..\isisandbox\.net\</OutputPath>
     <DocumentationFile>
     </DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
@@ -53,13 +56,13 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NoiseApp">
-      <HintPath>..\..\noiseapp.NET\bin\NoiseApp.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="NoiseApp, Version=3.0.0.0, Culture=neutral, PublicKeyToken=52c2e20ed820973d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Integral Solutions Int'l\.NET\NoiseApp.dll</HintPath>
     </Reference>
-    <Reference Include="Quasi97">
-      <HintPath>..\..\NET\Quasi97.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Quasi97, Version=7.2.6.0, Culture=neutral, PublicKeyToken=7407a1d60a271e24, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Integral Solutions Int'l\.NET\Quasi97.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
