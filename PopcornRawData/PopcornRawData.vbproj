@@ -59,10 +59,12 @@
     <Reference Include="NoiseApp, Version=3.0.0.0, Culture=neutral, PublicKeyToken=52c2e20ed820973d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Program Files (x86)\Integral Solutions Int'l\.NET\NoiseApp.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Quasi97, Version=7.2.6.0, Culture=neutral, PublicKeyToken=7407a1d60a271e24, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Program Files (x86)\Integral Solutions Int'l\.NET\Quasi97.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

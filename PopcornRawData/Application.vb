@@ -29,7 +29,7 @@
         If Not Me.disposedValue Then
             If disposing Then
                 ' TODO: dispose managed state (managed objects).
-                If qst IsNot Nothing Then qst.QuasiParameters.UnregisterTestClass(DigDataAnalyzer.SharedTestID)
+                If qst IsNot Nothing Then qst.QuasiParameters.UnregisterTestClass2(DigDataAnalyzer.SharedTestID)
                 qst = Nothing
             End If
 

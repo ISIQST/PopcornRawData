@@ -92,12 +92,12 @@ Public Class DigDataAnalyzer
             MyBase.RaiseNewResultsAvailable({0}) 'notify the test menu that new results are available
 
             'add information about the test
-            qst.GradingParameters.GradeTestNet(Me, 0)
-            rslt.AddInfo(Me, 0, qst.QuasiParameters.CurInfo)
+            qst.GradingParameters.GradeTestNet2(Me, 0)
+            rslt.AddInfo2(Me, 0, qst.QuasiParameters.CurInfo)
             MyBase.RaiseNewInfoAvailable()
 
             If Not AbortTest Then
-                If Not qst.QuasiParameters.ProductionMode Then qst.QuasiParameters.LogResults(Me, 1)
+                If Not qst.QuasiParameters.ProductionMode Then qst.QuasiParameters.LogResults2(Me, 0)
             End If
 
         Catch ex As Exception
@@ -121,11 +121,11 @@ Public Class DigDataAnalyzer
                     For j = 0 To .Rows.Count - 1
                         sum += CDbl(.Rows(j).Item(i)) ^ 2
                     Next
-                    myrslt.AddResult(myNV.RMS, Math.Sqrt(sum / .Rows.Count), CShort(i), True)
+                    myrslt.AddResult2(myNV.RMS, Math.Sqrt(sum / .Rows.Count), CShort(i), True)
                 Next
             End With
 
-            myrslt.CalcStats("Result")
+            myrslt.CalcStats2(False)
 
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -151,7 +151,7 @@ Public Class DigDataAnalyzer
         colParameters.Add(New Quasi97.clsTestParam("PopTestUserName", "PopTestUserName", Me, GetType(String), False, False))
 
         'register results
-        RegisterResults(CType(myNV, Object))
+        RegisterResults2(CType(myNV, Object))
     End Sub
 
     'this is the function that captures raw data from popcorn test
