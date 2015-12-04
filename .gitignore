@@ -1,5 +1,4 @@
 # git ignore file
-[Bb]in/
 [Oo]bj/
 [Rr]emoteDebug/
 !/lib
